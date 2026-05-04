@@ -36,6 +36,23 @@ const AboutContentTwo = ({ companyProfilePath }) => {
               needs and requirements.
             </div>
 
+            <div className="button-container">
+              <a
+                href="/static/media/Company Profile Book.1cdf1ff90872a179d757.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="secondary-button-styles">
+                  <div>Download Company Profile Book</div>
+                  <img
+                    alt=""
+                    src="/static/media/download.11a14276a149fd1d90f1.webp"
+                    className="icon"
+                  />
+                </div>
+              </a>
+            </div>
+
             {companyProfileUrl && (
               <div className="button-container">
                 <a
