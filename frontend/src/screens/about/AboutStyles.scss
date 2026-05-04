@@ -184,7 +184,7 @@
             font-weight: 700;
             font-size: 36px;
             color: $text;
-            text-align: center;
+            text-align: left;
             margin-right: 2vw;
           }
 
@@ -195,6 +195,7 @@
             font-weight: 400;
             line-height: 29px;
             text-align: justify;
+            text-align-last: left;
             margin-top: 30px;
           }
 
@@ -205,6 +206,7 @@
             font-size: 18px;
             line-height: 29px;
             text-align: justify;
+            text-align-last: left;
             margin-top: 30px;
           }
         }
@@ -568,6 +570,7 @@
           font-size: 18px;
           line-height: 29px;
           text-align: justify;
+          text-align-last: left;
           margin-top: 30px;
         }
 
@@ -577,7 +580,7 @@
           font-weight: 700;
           font-size: 24px;
           line-height: 29px;
-          text-align: center;
+          text-align: left;
           margin-top: 30px;
         }
       }
