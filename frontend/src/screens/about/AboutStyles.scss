@@ -615,13 +615,15 @@
       color: $primary-blue;
       text-align: center;
       padding-bottom: 3%;
-    }
-
-    .image-container {
       display: grid;
-      grid-template-columns: auto auto auto auto;
-      width: 70%;
-      margin: auto;
+    .member-view {
+      width: 100%;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow: hidden;
+    }
       padding-bottom: 3%;
 
       .image-item {
