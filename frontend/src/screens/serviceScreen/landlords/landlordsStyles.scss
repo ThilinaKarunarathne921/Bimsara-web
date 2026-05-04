@@ -93,6 +93,7 @@
           .top-conatiner-left {
             width: 50%;
             height: 100%;
+            flex-shrink: 0;
 
             .left-inner {
               padding-left: 100px;
@@ -259,13 +260,14 @@
         }
 
         .top-conatiner-right {
-          width: 46%;
+          width: calc(100% - 50% - 37px - 110px);
           margin-top: 120px;
           margin-left: 37px;
+          margin-right: 110px;
           padding-bottom: 5%;
           height: 95vh;
           overflow-y: auto;
-          padding-right: 12%;
+          padding-right: 10px;
           mask-image: linear-gradient(to bottom,
               black calc(100% - 48px),
               transparent 100%);
@@ -299,7 +301,7 @@
               font-weight: 300;
               font-size: 18px;
               line-height: 30px;
-              text-align: justify;
+              text-align: left;
               color: #434343;
             }
 
