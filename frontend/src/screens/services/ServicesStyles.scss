@@ -238,12 +238,11 @@
     .top-container {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: nowrap;
-      gap: 20px;
 
       .top-content {
-        flex: 1;
+        flex: 0 0 auto;
         color: $primary-red;
         display: flex;
         justify-content: center;
@@ -252,6 +251,7 @@
         font-style: italic;
         font-size: 34px;
         text-align: center;
+        padding: 0 30px;
       }
     }
 
@@ -1482,12 +1482,12 @@
           .top-container {
             width: 100%;
             flex-wrap: nowrap;
-            justify-content: space-around;
-            gap: 20px;
+            justify-content: center;
 
             .top-content {
-              flex: 1;
+              flex: 0 0 auto;
               text-align: center;
+              padding: 0 30px;
             }
           }
         }
@@ -1496,12 +1496,12 @@
           .top-container {
             width: 100%;
             flex-wrap: nowrap;
-            justify-content: space-around;
-            gap: 20px;
+            justify-content: center;
 
             .top-content {
-              flex: 1;
+              flex: 0 0 auto;
               text-align: center;
+              padding: 0 30px;
             }
           }
         }
@@ -1727,15 +1727,15 @@
       .top-container {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: nowrap;
-        gap: 40px;
 
         .top-content {
-          flex: 1;
+          flex: 0 0 auto;
           font-size: 50px;
           line-height: 60px;
           text-align: center;
+          padding: 0 40px;
         }
       }
 

@@ -53,11 +53,10 @@
         display: flex;
         margin-top: 2.5%;
         margin-bottom: 1.8%;
-        justify-content: space-around;
-        gap: 20px;
+        justify-content: center;
 
         .top-content {
-          flex: 1;
+          flex: 0 0 auto;
           color: $primary-red;
           display: flex;
           justify-content: center;
@@ -66,6 +65,7 @@
           font-style: italic;
           font-size: 30px;
           text-align: center;
+          padding: 0 30px;
 
           .iso {
             margin-top: 10px;
@@ -154,12 +154,11 @@
 
     .who-header {
       color: $primary-blue;
-      display: flex;
       font-family: "Lato";
       font-size: 25px;
       letter-spacing: 0.6em;
       text-transform: uppercase;
-      text-align: center;
+      text-align: left;
     }
 
     .inner-who {
@@ -171,7 +170,7 @@
         width: 80%;
 
         .bottom-left-container {
-          //width: 68%;
+          width: 95%;
           height: 70%;
           padding-right: 10%;
           margin-top: 3%;
@@ -1589,12 +1588,12 @@
     .about-background {
       .AboutContentOne {
         .top-container {
-          justify-content: space-around;
-          gap: 20px;
+          justify-content: center;
 
           .top-content {
-            flex: 1;
+            flex: 0 0 auto;
             text-align: center;
+            padding: 0 30px;
           }
         }
       }
@@ -1654,14 +1653,14 @@
           margin-top: 99px;
           width: 90%;
           display: flex;
-          justify-content: space-around;
-          gap: 40px;
+          justify-content: center;
 
           .top-content {
-            flex: 1;
+            flex: 0 0 auto;
             font-size: 40px;
             line-height: 60px;
             text-align: center;
+            padding: 0 40px;
 
             .iso {
               margin-top: 10px;
@@ -1740,6 +1739,8 @@
         font-size: 30px;
         line-height: 45px;
         letter-spacing: 1em;
+        text-align: left;
+        display: block;
       }
 
       .inner-who {
@@ -1755,18 +1756,21 @@
             .heder-content {
               font-size: 50px;
               line-height: 60px;
+              text-align: left;
             }
 
             .sub-content {
               font-size: 30px;
               line-height: 50px;
               margin-top: 39px;
+              text-align: left;
             }
 
             .sub-content-two {
               font-size: 30px;
               line-height: 50px;
               margin-top: 36px;
+              text-align: left;
             }
           }
         }
