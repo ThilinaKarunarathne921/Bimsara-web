@@ -53,10 +53,11 @@
         display: flex;
         margin-top: 2.5%;
         margin-bottom: 1.8%;
-        justify-content: left;
+        justify-content: space-around;
+        gap: 20px;
 
         .top-content {
-          width: 26%;
+          flex: 1;
           color: $primary-red;
           display: flex;
           justify-content: center;
@@ -64,6 +65,7 @@
           font-weight: 600;
           font-style: italic;
           font-size: 30px;
+          text-align: center;
 
           .iso {
             margin-top: 10px;
@@ -184,7 +186,7 @@
             font-weight: 700;
             font-size: 36px;
             color: $text;
-            text-align: justify;
+            text-align: left;
             margin-right: 2vw;
           }
 
@@ -194,7 +196,7 @@
             font-size: 18px;
             font-weight: 400;
             line-height: 29px;
-            text-align: justify;
+            text-align: left;
             margin-top: 30px;
           }
 
@@ -204,7 +206,7 @@
             font-weight: 300;
             font-size: 18px;
             line-height: 29px;
-            text-align: justify;
+            text-align: left;
             margin-top: 30px;
           }
         }
@@ -1582,6 +1584,24 @@
   }
 }
 
+@media screen and (min-width: 1201px) and (max-width: 1918px) {
+  .About {
+    .about-background {
+      .AboutContentOne {
+        .top-container {
+          justify-content: space-around;
+          gap: 20px;
+
+          .top-content {
+            flex: 1;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1919px) {
   .About {
     background: linear-gradient($background-line 0 0) calc(1 * 100% / 20),
@@ -1633,10 +1653,15 @@
         .top-container {
           margin-top: 99px;
           width: 90%;
+          display: flex;
+          justify-content: space-around;
+          gap: 40px;
 
           .top-content {
+            flex: 1;
             font-size: 40px;
             line-height: 60px;
+            text-align: center;
 
             .iso {
               margin-top: 10px;
