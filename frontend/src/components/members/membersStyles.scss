@@ -22,9 +22,15 @@
 
       @for $i from 1 through $item-count {
         &:nth-of-type(#{$i}) {
-          transform: rotate($rot * 1deg)
-            translate($circle-size / 1.9)
-            rotate($rot * -1deg);
+          @if $i == 1 {
+            transform: rotate(210deg)
+              translate($circle-size / 1.9)
+              rotate(-210deg);
+          } @else {
+            transform: rotate($rot * 1deg)
+              translate($circle-size / 1.9)
+              rotate($rot * -1deg);
+          }
         }
         $rot: $rot + 21;
       }
@@ -56,8 +62,8 @@
       max-width: 100%;
       border-radius: 50%;
       transition: 0.15s;
-      height: 100px;
-      width: 100px;
+      height: 90px;
+      width: 90px;
       background: $background-line;
       object-fit: cover;
       cursor: pointer;
@@ -88,9 +94,9 @@
         justify-content: center;
         
         img {
-          height: 140px;
+          height: 160px;
           border-radius: 50%;
-          width: 140px;
+          width: 160px;
           border: 3px solid #e7c694;
           object-fit: cover;
         }
@@ -105,18 +111,20 @@
         }
       }
       .member-name {
+
         font-family: "Lato";
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 29px;
         text-align: center;
         color: $primary-red;
+        margin-top: 20px;
       }
       .member-designation {
         font-family: "Lato";
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 29px;
         text-align: center;
         margin-top: 8px;
         color: $dark-text;
@@ -240,9 +248,15 @@
 
         @for $i from 1 through $item-count {
           &:nth-of-type(#{$i}) {
-            transform: rotate($rot * 1deg)
-              translate($circle-size / 1.9)
-              rotate($rot * -1deg);
+            @if $i == 1 {
+              transform: rotate(220deg)
+                translate($circle-size / 1.9)
+                rotate(-220deg);
+            } @else {
+              transform: rotate($rot * 1deg)
+                translate($circle-size / 1.9)
+                rotate($rot * -1deg);
+            }
           }
           $rot: $rot + 21;
         }
@@ -308,22 +322,24 @@
           .linked {
           border: none;
           position: absolute;
-          height: 40px;
-          width: 40px;
-          margin-top: 100px;
-          margin-left: -40px;
+          height: 55px;
+          width: 55px;
+          margin-top: 160px;
+          margin-left: -60px;
           cursor: pointer;
         }
         }
         .member-name {
-          font-size: 30px;
+          font-size: 33px;
           line-height: 45px;
           margin-top: 100px;
+
         }
         .member-designation {
-          font-size: 23px;
+          font-size: 30px;
           line-height: 40px;
           margin-top: 0;
+
         }
         .member-quote {
         font-family: "Lato";
