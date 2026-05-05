@@ -159,6 +159,7 @@
       letter-spacing: 0.6em;
       text-transform: uppercase;
       text-align: left;
+      
     }
 
     .inner-who {
@@ -1528,8 +1529,9 @@
           .who-header {
             font-size: 25px;
             line-height: 45px;
-            text-align: justify;
+            text-align: center;
             letter-spacing: 1em;
+            
           }
 
           .inner-who {
@@ -1776,23 +1778,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1918px) {
-  .About {
-    .about-background {
-      .AboutContentOne {
-        .top-container {
-          justify-content: center;
 
-          .top-content {
-            flex: 0 0 auto;
-            text-align: center;
-            padding: 0 30px;
-          }
-        }
-      }
-    }
-  }
-}
 
 @media screen and (min-width: 1919px) {
   .About {
