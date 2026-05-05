@@ -654,7 +654,7 @@
   .content-text {
     font-size: 15px !important;
     line-height: 1.75 !important;
-    text-align: left !important;
+    text-align: justify !important;
   }
 
   .sellerCardContainer,
@@ -1561,7 +1561,7 @@
   .tenants .content-text,
   .About .sub-content,
   .About .sub-content-two {
-    text-align: left !important;
+    text-align: justify !important;
     word-spacing: normal !important;
     overflow-wrap: anywhere;
   }
