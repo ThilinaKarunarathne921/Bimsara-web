@@ -316,16 +316,16 @@ app.post('/api/admin/team-members', authenticateToken, upload.single('photo'), (
         if (err) {
           return res.status(500).json({ error: err.message });
         }
-        res.json({ 
-          id: this.lastID, 
-          name, 
+        res.json({
+          id: this.lastID,
+          name,
           position,
           photo_path,
           linkedin_url: linkedin_url || null,
           display_order,
           description1: description1 || null,
           description2: description2 || null,
-          message: 'Team member created successfully' 
+          message: 'Team member created successfully'
         });
       }
     );
