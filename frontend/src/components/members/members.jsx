@@ -91,15 +91,17 @@ const Members = () => {
             </div>
             <div className="member-name">{selected.name}</div>
             <div className="member-designation">{selected.pos}</div>
-            <div className="member-quote">{selected.quote}</div>
-            <div className="member-description">
-              {selected.des}
-              {selected.des2 && (
-                <>
-                  <br />
-                  {selected.des2}
-                </>
-              )}
+            <div className="member-text-scroll">
+              <div className="member-quote">{selected.quote}</div>
+              <div className="member-description">
+                {selected.des}
+                {selected.des2 && (
+                  <>
+                    <br />
+                    {selected.des2}
+                  </>
+                )}
+              </div>
             </div>
           </div>
         </div>
