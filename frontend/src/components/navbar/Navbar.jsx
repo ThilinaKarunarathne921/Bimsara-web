@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
+import hamburger1 from "../../assets/images/Bimsara Real Estate - Hamburger 1.webp";
 import hamburger2 from "../../assets/images/Bimsara Real Estate - Hamburger 2.webp";
 import img from "../../assets/images/Bimsara Real Estate - Sellers Icon.webp";
 import buyer from "../../assets/images/Bimsara Real Estate - Buyers Icon.webp";
@@ -188,7 +189,8 @@ const Navbar = () => {
         onClick={() => { if (open || closing) closeNav(); else { setOpen(true); setOpenFlyout(null); } }}
         aria-label="Toggle navigation"
       >
-        <img src={hamburger2} alt="Menu" />
+        <img src={hamburger1} alt="Menu" className="ham-img-1" />
+        <img src={hamburger2} alt="Menu" className="ham-img-2" />
       </button>
 
       <nav className={`Nav-bar${(open || closing) ? ' nav-open' : ''}${closing ? ' nav-closing' : ''}`} aria-label="Primary navigation">
