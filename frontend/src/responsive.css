@@ -992,13 +992,13 @@
     padding-bottom: 0 !important;
   }
 
+  .Services .top-bottom-container {
+    margin-top: 25% !important;
+  }
+
   .Services .header-text {
     margin-top: 22px !important;
     padding-right: 72px !important;
-  }
-
-  .Services .top-bottom-container {
-    margin-top: 24px !important;
   }
 
   .Services .topper-container {
