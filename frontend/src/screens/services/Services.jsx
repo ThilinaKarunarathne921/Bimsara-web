@@ -20,36 +20,15 @@ import ServicesContentFive from "./ServicesContectFive";
 import ContactComponent from "../../components/contactComponent/contactComponent";
 import ContactModal from "../../components/modal/contactModal/contactModal";
 import Footer from "../../components/footer/footer";
-import HamburgerIcon from "../../components/hamburgerIcon/hamburgerIcon";
-import Sidebar from "../../components/sidebar/sidebar";
-
 const Services = () => {
   const navigate = useNavigate();
   const [dropdown, setDropdown] = useState(false);
   const [contactModal, setContactModal] = useState(false);
-  const [sidebar, setSidebar] = useState(false);
 
   return (
     <div className="Services">
-      {sidebar ? <Sidebar setSidebar={setSidebar} /> : ""}
-      <div className="Services-background"
-        onClick={() => {
-          let element = document.getElementById('sidee');
-          if (element) {
-            element.style.right = "0";
-            element.style.animation = "slideout 1s backwards";
-            setTimeout(() => {
-              setSidebar(false);
-            }, 500);
-          }
-        }}
-      >
-        <div className="ham-bar-div">
-          <HamburgerIcon setSidebar={setSidebar} sidebar={sidebar} />
-        </div>
-        <div className="nav-bar-div">
-          <Navbar nav="services" />
-        </div>
+      <Navbar />
+      <div className="Services-background">
         <div className="logo-container">
           <img alt="" src={logo} className="logo" onClick={() => {
             navigate("/");

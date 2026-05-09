@@ -213,7 +213,6 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .Nav-bar,
   .nav-bar-div,
   .about-nav-bar,
   .right-bar-div,
@@ -225,12 +224,104 @@
     display: none !important;
   }
 
-  .ham-bar-div {
+  .nav-hamburger-btn {
     display: block !important;
   }
 
   .hamburgerIcon {
     z-index: 35 !important;
+  }
+
+  /* Self-managing mobile nav */
+  .Nav-bar .main-nav {
+    width: 80px !important;
+    z-index: 65 !important;
+    background: #f7faff !important;
+    transform: translateX(100%);
+    transition: none;
+  }
+
+  .Nav-bar.nav-open .main-nav {
+    animation: navMobileIn 0.5s ease both;
+  }
+
+  .Nav-bar.nav-closing .main-nav {
+    animation: navMobileOut 0.5s ease both;
+  }
+
+  @keyframes navMobileIn {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(0); }
+  }
+
+  @keyframes navMobileOut {
+    from { transform: translateX(0); }
+    to   { transform: translateX(100%); }
+  }
+
+  .Nav-bar.nav-open .overlayer {
+    display: block !important;
+  }
+
+  /* Mobile nav item sizing */
+  .Nav-bar .main-nav .nav {
+    padding-top: 100px !important;
+  }
+
+  .Nav-bar .main-nav .nav .homeNav,
+  .Nav-bar .main-nav .nav .servicesNav,
+  .Nav-bar .main-nav .nav .testimonialsNav,
+  .Nav-bar .main-nav .nav .aboutNav,
+  .Nav-bar .main-nav .nav .contactNav {
+    width: 80px !important;
+  }
+
+  .Nav-bar .main-nav .nav .rotate {
+    font-size: 21px !important;
+    white-space: nowrap !important;
+  }
+
+  .Nav-bar .main-nav .nav .rotate * {
+    white-space: nowrap !important;
+  }
+
+  .Nav-bar .main-nav .nav .homeNav {
+    padding-bottom: 2.5vh !important;
+  }
+  .Nav-bar .main-nav .nav .homeNav .rotate {
+    margin-top: 44px !important;
+  }
+  .Nav-bar .main-nav .nav .servicesNav {
+    padding-bottom: 2.5vh !important;
+  }
+  .Nav-bar .main-nav .nav .servicesNav .rotate {
+    margin-top: 34px !important;
+  }
+  .Nav-bar .main-nav .nav .testimonialsNav {
+    padding-bottom: 2.5vh !important;
+  }
+  .Nav-bar .main-nav .nav .testimonialsNav .rotate {
+    margin-top: 44px !important;
+  }
+  .Nav-bar .main-nav .nav .aboutNav {
+    padding-bottom: 2.5vh !important;
+  }
+  .Nav-bar .main-nav .nav .aboutNav .rotate {
+    margin-top: 48px !important;
+  }
+  .Nav-bar .main-nav .nav .contactNav {
+    padding-bottom: 2vh !important;
+  }
+  .Nav-bar .main-nav .nav .contactNav .rotate {
+    margin-top: 32px !important;
+  }
+
+  /* Flyout panels on mobile: keep absolute position relative to main-nav */
+  .Nav-bar .main-nav .hovercontent,
+  .Nav-bar .main-nav .hovercontent-2,
+  .Nav-bar .main-nav .hovercontent-3 {
+    right: 80px !important;
+    z-index: 66;
   }
 
   .mobile-nav-backdrop {
@@ -2085,8 +2176,14 @@
 /* Final desktop/laptop QA corrections from full viewport audit. */
 @media screen and (min-width: 1200px) {
   .ham-bar-div,
-  .hamburgerIcon {
+  .hamburgerIcon,
+  .nav-hamburger-btn {
     display: none !important;
+  }
+
+  .Nav-bar .main-nav {
+    transform: translateX(0) !important;
+    animation: none !important;
   }
 
   .Nav-bar,
