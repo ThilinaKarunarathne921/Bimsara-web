@@ -7,12 +7,9 @@ import rect from "../../assets/images/Bimsara Real Estate - Home dropdown bg web
 import rect2 from "../../assets/images/Bimsara Real Estate - Home dropdown bg tablet.webp";
 import hamburger from "../../assets/icons/hamburger.webp";
 import arrow from "../../assets/icons/white-arrow.webp";
-import circle from "../../assets/icons/round.webp";
-import iso from "../../assets/images/Bimsara Real Estate - ISO Logo.webp";
-import safetynet from "../../assets/images/Safetynet Private Limited - Logo.webp";
-
 import "./ServicesStyles.scss";
 
+import FloatingButton from "../../components/floatingButton/FloatingButton";
 import Navbar from "../../components/navbar/Navbar";
 import ServicesContentOne from "./ServicesContentOne";
 import RightBar from "../../components/rightBar/RightBar";
@@ -136,14 +133,7 @@ const Services = () => {
                 setDropdown(false);
               }}
             >
-              <div
-                className="top-content-arrow"
-              >
-                <img alt="" src={iso} className="iso" />
-                <img alt="" src={safetynet} className="safetynet" />
-                <img alt="" src={circle} className="circle"
-                  onClick={() => setContactModal(true)} />
-              </div>
+              <FloatingButton onCircleClick={() => setContactModal(true)} />
               <img alt="" src={image} className="bg" />
             </div>
           </div>
